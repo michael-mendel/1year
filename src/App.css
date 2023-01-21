@@ -2,37 +2,131 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.body {
+  /* color:white; */
+  position: relative;
+  /* background-color: aqua; */
+  display:flex;
+  flex-direction:column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  color:white;
+  font-size: 35pt;
+  /* background-color: red; */
+  padding: 20pt;
+}
+.memories {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* background-color: rgb(208, 255, 0); */
+}
+.memory{
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  border-color: white;
+  border-width: 2pt;
+  border-radius:50%;
+  border-style: solid;
+  height: 30pt;
+  width: 30pt;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  animation: memory-grow-shrink infinite 1.5s alternate-reverse;
 }
 
-@keyframes App-logo-spin {
+@keyframes memory-grow-shrink {
   from {
-    transform: rotate(0deg);
+    transform: scale(1);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(2);
   }
+}
+
+.memory:hover{
+  transform: scale(2);
+  transition-duration: 1s;
+  background-color: white;
+}
+
+.background {
+  position: fixed;
+}
+
+.modal {
+  z-index: 3;
+  width: 80%;
+  height: 80%; 
+  background: white;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  animation: animate 0.3s;
+  left:10%;
+  top: 10%;
+  position: relative;
+  border:none;
+  border-radius: 7%;
+}
+.modalDiv{
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  width: 100%;
+  margin:10pt;
+}
+
+.modalRow{
+  /* background-color: aquamarine; */
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 80vw;
+}
+.modalClose{
+  background-color: red;
+  border-radius: 100%;
+  border:none;
+  height: 15pt;
+  width: 15pt;
+  margin-left: 20pt;
+  margin-top: 20pt;
+  margin-bottom: 20pt;
+  color: red;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.modalClose:hover{
+  color:black;
+}
+
+.memoryDiv{
+  margin:30pt;
+}
+
+.imageRow{
+  /* background-color: aquamarine; */
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: center;
+  flex-direction: row;
+  width: 80vw;
+  margin-bottom: 10pt;
+
+}
+
+img {
+  max-width: 100%;
+  /* max-height: 100%; */
 }
