@@ -72,11 +72,11 @@
   top: 5%;
   position: relative;
   border:none;
-  margin: 10pt;
+  /* margin: 10pt; */
   overflow: hidden;
   /* border-radius: 7%; */
-
 }
+
 .modalDiv{
   /* background-color: yellow; */
   display: flex;
@@ -118,6 +118,7 @@
   justify-content: flex-end;
   flex-direction: row;
   margin-right: 10%;
+  margin-top:30%;
   width: 80vw;
 }
 .modalRow{
@@ -141,6 +142,7 @@
   color: black;
   font-size: 10pt;
   font-weight: bold;
+  text-align: center;
   /* border: 2px;
   border-style: solid;
   border-color: white; */
