@@ -27,7 +27,7 @@ export default function Memory
     fontWeight: 'bold',
   }
 
-  const [modalIsOpen, setModalIsOpen] = useState(true)
+  const [modalIsOpen, setModalIsOpen] = useState(false)
 
   return (
     <div className="memoryDiv">
