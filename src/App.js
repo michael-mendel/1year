@@ -133,14 +133,14 @@ const App = () => {
         {!matches && (
             <div className="memories">
               <Memory location={'5vw'} data={data}/>
-              {/* <Memory location={'60vw'} data={data}/>
+              <Memory location={'60vw'} data={data}/>
               <Memory location={'20vw'} data={data}/>
               <Memory location={'65vw'} data={data}/>
               <Memory location={'12vw'} data={data}/>
               <Memory location={'55vw'} data={data}/>
               <Memory location={'15vw'} data={data}/>
               <Memory location={'50vw'} data={data}/>
-              <Memory location={'10vw'} data={data}/> */}
+              <Memory location={'10vw'} data={data}/>
             </div>
         )}
       </div>
