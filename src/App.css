@@ -84,10 +84,42 @@
   /* justify-content: center; */
   flex-direction: column;
   width: 100%;
-  max-height: 100%;
+  max-height: 80%;
   /* margin:10pt; */
 }
 
+.carouselDivSmall{
+  display:flex;
+  flex-direction:row; 
+  /* background-color: yellow; */
+  height:100%;
+  width:100%;
+  /* justify-content: center; */
+  /* align-items:center; */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.modalDivSmall{
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  /* margin:10pt; */
+}
+
+.modalRowSmall{
+  /* background-color: aquamarine; */
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-right: 10%;
+  width: 80vw;
+}
 .modalRow{
   /* background-color: aquamarine; */
   display: flex;
@@ -105,6 +137,22 @@
   width: 20pt;
   margin-left: 20pt;
   margin-top: 20pt;
+  /* margin-bottom: 20pt; */
+  color: black;
+  font-size: 10pt;
+  font-weight: bold;
+  /* border: 2px;
+  border-style: solid;
+  border-color: white; */
+}
+
+.modalCloseSmall{
+  background-color: red;
+  border-radius: 100%;
+  border:none;
+  height: 20pt;
+  width: 20pt;
+  margin-top: 10pt;
   /* margin-bottom: 20pt; */
   color: black;
   font-size: 10pt;
