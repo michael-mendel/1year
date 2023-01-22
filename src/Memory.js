@@ -1,62 +1,128 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from 'react-modal'
-import uuidv4 from "uuid";
-import ImageContainer from "./ImageContainer";
+import { Carousel } from 'react-carousel-minimal';
+
 
 
 
 export default function Memory
-(props) {
-  const slides = [
-      {
-        key: uuidv4(),
-        content: <img src="https://picsum.photos/800/801/?random" alt="1" />
-      },
-      {
-        key: uuidv4(),
-        content: <img src="https://picsum.photos/800/802/?random" alt="2" />
-      },
-      {
-        key: uuidv4(),
-        content: <img src="https://picsum.photos/600/803/?random" alt="3" />
-      },
-      {
-        key: uuidv4(),
-        content: <img src="https://picsum.photos/800/500/?random" alt="4" />
-      },
-      {
-        key: uuidv4(),
-        content: <img src="https://picsum.photos/800/804/?random" alt="5" />
-      },
-      {
-        key: uuidv4(),
-        content: <img src="https://picsum.photos/500/800/?random" alt="6" />
-      },
-      {
-        key: uuidv4(),
-        content: <img src="https://picsum.photos/800/600/?random" alt="7" />
-      },
-      {
-        key: uuidv4(),
-        content: <img src="https://picsum.photos/805/800/?random" alt="8" />
-      }
-    ].map((slide, index) => {
-      return { ...slide, onClick: () => {props.state.goToSlide=index} };
-    });
+  (props) {
 
-  const[modalIsOpen, setModalIsOpen] = useState(true)
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  )
+
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 768px)")
+      .addEventListener('change', e => setMatches(e.matches));
+  }, []);
+
+  const captionStyle = {
+    fontSize: '2em',
+    fontWeight: 'bold',
+  }
+  const slideNumberStyle = {
+    fontSize: '20px',
+    fontWeight: 'bold',
+  }
+
+  const [modalIsOpen, setModalIsOpen] = useState(false)
 
   return (
     <div className="memoryDiv">
-      <button onClick = {() => setModalIsOpen(true)} className='memory' style={{left:props.location}}></button>
-      <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className='modal'>
-        <div className='modalDiv'>
-          {/* <div className='modalRow'>
-            <button className='modalClose' onClick = {() => setModalIsOpen(false)} >X</button>
-          </div> */}
-            <ImageContainer/>
-        </div>
-      </Modal>
+      <button onClick={() => setModalIsOpen(true)} className='memory' style={{ left: props.location }}></button>
+      {/* computer screen */}
+      {matches && (
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={() => setModalIsOpen(false)}
+          className='modal'
+          style={{
+            overlay: {
+              backgroundColor: 'none'
+            },
+            border: 'none'
+          }}
+        >
+          <div className='modalDiv'>
+            <div className="modalRow">
+              <button className='modalClose' onClick={() => { setModalIsOpen(false) }}>X</button>
+            </div>
+            <Carousel
+              data={props.data}
+              time={2000}
+              width="850px"
+              height="400px"
+              captionStyle={captionStyle}
+              radius="10px"
+              slideNumber={false}
+              slideNumberStyle={slideNumberStyle}
+              captionPosition="bottom"
+              automatic={false}
+              dots={false}
+              pauseIconColor="black"
+              pauseIconSize="40px"
+              slideBackgroundColor="none"
+              slideImageFit="contain"
+              thumbnails={true}
+              thumbnailWidth="100px"
+              style={{
+                textAlign: "center",
+                maxWidth: "600px",
+                maxHeight: "500px",
+                margin: "40px auto",
+              }}
+            />
+          </div>
+        </Modal>
+      )}
+      {/* phone screen */}
+      {!matches && (
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={() => setModalIsOpen(false)}
+          className='modal'
+          style={{
+            overlay: {
+              backgroundColor: 'none'
+            },
+            border: 'none'
+          }}
+        >
+          <div className='modalDiv'>
+            <div className="modalRow">
+              <button className='modalClose' onClick={() => { setModalIsOpen(false) }}>X</button>
+            </div>
+            <Carousel
+              data={props.data}
+              time={2000}
+              width="850px"
+              height="400px"
+              captionStyle={captionStyle}
+              radius="10px"
+              slideNumber={false}
+              slideNumberStyle={slideNumberStyle}
+              captionPosition="bottom"
+              automatic={false}
+              dots={false}
+              pauseIconColor="black"
+              pauseIconSize="40px"
+              slideBackgroundColor="none"
+              slideImageFit="contain"
+              thumbnails={true}
+              thumbnailWidth="100px"
+              style={{
+                textAlign: "center",
+                maxWidth: "600px",
+                maxHeight: "500px",
+                margin: "40px auto",
+              }}
+            />
+          </div>
+        </Modal>
+      )}
+
     </div>
   );
 }

@@ -63,7 +63,7 @@ export default class ImageContainer extends Component {
             offsetRadius={this.state.offsetRadius}
             showNavigation={this.state.showNavigation}
             animationConfig={this.state.config}
-            style={{ background:'red', display:'flex', flexDirection:'column', justifyContent:'center',width: "80%", height: "400px" }}
+            style={{ background:'red', display:'flex', flexDirection:'column', justifyContent:'center',maxWidth: "100%", height: "auto" }}
             />
         </div>
     );
