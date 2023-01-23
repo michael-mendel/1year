@@ -76,7 +76,7 @@ export default function Memory
                 height:"100%",
                 alignItems:"center",
                 justifyContent:"center",
-                backgroundColor: 'red',
+                backgroundColor: 'black',
                 display:"flex",
                 flexDirection:"column",
                 margin: "10px",
