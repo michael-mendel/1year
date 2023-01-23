@@ -9,7 +9,7 @@ export default function Login() {
         // gets the current input value
         const answer = document.getElementById("password").value;
 
-        if (answer === "hamburgesa") {
+        if (answer === "Mihamburguesa") {
             setIsVerified(true);
         } else {
             alert("Sorry, that's not it");
