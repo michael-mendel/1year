@@ -388,8 +388,8 @@ const App = () => {
 
   const kbday = [
     {
-      image: 'images/kbday1.JPEG',
-      caption: "I surprised you for your 21st BDay"
+      image: 'images/kbday5.JPG',
+      caption: "I surprised you for your 21st"
     },
     {
       image: 'images/food1.JPG',
@@ -407,16 +407,16 @@ const App = () => {
       image: 'images/kbday4.JPG',
       caption: ""
     },
-    {
-      image: 'images/kbday5.JPG',
-      caption: ""
-    },
   ];
 
   const mbday = [
     {
       image: 'images/mbday6.JPEG',
       caption: "I turned 21"
+    },
+    {
+      image: 'images/kbday1.JPEG',
+      caption:""
     },
     {
       image: 'images/mbday.jpg',

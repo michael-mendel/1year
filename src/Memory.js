@@ -70,16 +70,16 @@ export default function Memory
               slideNumber={false}
               slideNumberStyle={slideNumberStyle}
               captionPosition="bottom"
-              automatic={false}
+              automatic={true}
               dots={false}
-              pauseIconColor="black"
+              pauseIconColor="white"
               pauseIconSize="40px"
               slideBackgroundColor="none"
               slideImageFit="contain"
               thumbnails={true}
               thumbnailWidth="50px"
               style={{
-                textAlign: "center",
+                // textAlign: "center",
                 maxWidth: "600px",
                 maxHeight: "500px",
                 margin: "40px auto",
@@ -125,16 +125,16 @@ export default function Memory
                 slideNumber={false}
                 slideNumberStyle={slideNumberStyle}
                 captionPosition="bottom"
-                automatic={false}
+                automatic={true}
                 dots={false}
-                pauseIconColor="black"
+                pauseIconColor="white"
                 pauseIconSize="40px"
                 slideBackgroundColor="none"
                 slideImageFit="contain"
                 thumbnails={false}
                 thumbnailWidth="100px"
                 style={{
-                  textAlign: "center",
+                  // textAlign: "center",
                   maxWidth: "100%",
                   maxHeight: "100%",
                   width: "100%",
