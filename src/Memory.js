@@ -28,10 +28,21 @@ export default function Memory
   }
 
   const [modalIsOpen, setModalIsOpen] = useState(false)
+  const [visited, setVisited] = useState(false)
+
 
   return (
     <div className="memoryDiv">
-      <button onClick={() => setModalIsOpen(true)} className='memory' style={{ left: props.location }}></button>
+      {modalIsOpen}
+      {!visited && (<button onClick={() => {
+        setModalIsOpen(true)
+        setVisited(true)
+      }} className='memory' style={{ left: props.location }}></button>)}
+      {visited && (<button onClick={() => {
+        setModalIsOpen(true)
+        setVisited(true)
+      }} className='memoryVisited' style={{ left: props.location }}></button>)}
+
       {/* computer screen */}
       {matches && (
         <Modal
@@ -47,7 +58,7 @@ export default function Memory
         >
           <div className='modalDiv'>
             <div className="modalRow">
-              <AiFillCloseCircle color='red' size='30pt' onClick={() => { setModalIsOpen(false) } } />
+              <AiFillCloseCircle color='red' size='30pt' onClick={() => { setModalIsOpen(false) }} />
             </div>
             <Carousel
               data={props.data}
@@ -73,12 +84,12 @@ export default function Memory
                 maxHeight: "500px",
                 margin: "40px auto",
                 width: "100%",
-                height:"100%",
-                alignItems:"center",
-                justifyContent:"center",
+                height: "100%",
+                alignItems: "center",
+                justifyContent: "center",
                 backgroundColor: 'black',
-                display:"flex",
-                flexDirection:"column",
+                display: "flex",
+                flexDirection: "column",
                 margin: "10px",
                 padding: "10px"
               }}

@@ -1,17 +1,17 @@
+import React, { useCallback, useEffect, useState } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import { useCallback } from "react";
 import './App.css';
 import Memory from "./Memory";
-import React, { useState, useEffect } from "react";
 
 const App = () => {
+
 
   const aug = [
     {
       image: 'images/aug9.JPG',
       caption: "A little trip to St.Augustine"
-    }, 
+    },
     {
       image: 'images/aug1.JPG',
       caption: ""
@@ -26,7 +26,7 @@ const App = () => {
     },
     {
       image: 'images/aug5.png',
-      caption: ""
+      caption: "Chipotle and drinks on the beach"
     },
     {
       image: 'images/aug6.PNG',
@@ -42,8 +42,8 @@ const App = () => {
     },
     {
       image: 'images/aug3.JPG',
-      caption: ""
-    }, 
+      caption: "This ones my favorite"
+    },
   ];
 
   const cruise = [
@@ -57,7 +57,7 @@ const App = () => {
     },
     {
       image: 'images/cruise3.JPG',
-      caption: ""
+      caption: "Piña colodas all day"
     },
     {
       image: 'images/cruise4.JPG',
@@ -93,7 +93,7 @@ const App = () => {
     },
     {
       image: 'images/cruise26.png',
-      caption: ""
+      caption: "Ooo Ooo Ahh Ahh"
     },
     {
       image: 'images/cruise27.JPG',
@@ -133,11 +133,11 @@ const App = () => {
     },
     {
       image: 'images/cruise42.png',
-      caption: ""
+      caption: "Ribbit Ribbit"
     },
     {
       image: 'images/cruise43.JPG',
-      caption: ""
+      caption: "Safest Ride of our lives with the IceCream Man"
     },
     {
       image: 'images/cruise44.png',
@@ -212,11 +212,11 @@ const App = () => {
     {
       image: 'images/gat14.png',
       caption: "That time we almost got caught in a snow storm"
-    },  
+    },
     {
       image: 'images/gat12.png',
       caption: ""
-    },  
+    },
     {
       image: 'images/gat4.JPG',
       caption: ""
@@ -240,49 +240,49 @@ const App = () => {
     {
       image: 'images/gat9.JPG',
       caption: ""
-    },  
+    },
     {
       image: 'images/gat10.png',
       caption: ""
-    },    
+    },
     {
       image: 'images/gat13.png',
       caption: ""
-    },  
+    },
     {
       image: 'images/gat15.JPG',
       caption: ""
-    }, 
+    },
     {
       image: 'images/gat16.png',
       caption: ""
-    },   
+    },
     {
       image: 'images/gat17.png',
       caption: ""
-    }, 
+    },
     {
       image: 'images/gat18.png',
       caption: ""
-    },  
+    },
     {
       image: 'images/gat19.png',
       caption: ""
-    },   
+    },
     {
       image: 'images/gat20.png',
       caption: ""
-    },    
+    },
     {
       image: 'images/gat21.png',
       caption: ""
-    },    
+    },
   ];
 
   const grad = [
     {
       image: 'images/grad2.JPG',
-      caption: "Mike's Graduation"
+      caption: "I almost didnt graduate"
     },
     {
       image: 'images/grad1.png',
@@ -298,7 +298,7 @@ const App = () => {
     },
     {
       image: 'images/grad5.png',
-      caption: ""
+      caption: "To Be Continued..."
     },
   ];
 
@@ -389,7 +389,11 @@ const App = () => {
   const kbday = [
     {
       image: 'images/kbday1.JPEG',
-      caption: "Kari's 21st BDay"
+      caption: "I surprised you for your 21st BDay"
+    },
+    {
+      image: 'images/food1.JPG',
+      caption: "First time at Houstons"
     },
     {
       image: 'images/kbday2.JPG',
@@ -412,11 +416,11 @@ const App = () => {
   const mbday = [
     {
       image: 'images/mbday6.JPEG',
-      caption: "Mike's 21st BDay"
+      caption: "I turned 21"
     },
     {
       image: 'images/mbday.jpg',
-      caption: ""
+      caption: "And tali too but im just grouping these pics with my bday"
     },
     {
       image: 'images/mbday1.jpg',
@@ -428,14 +432,14 @@ const App = () => {
     },
     {
       image: 'images/mbday4.JPEG',
-      caption: ""
+      caption: "RIP apple watch #1"
     }
   ];
 
   const out = [
     {
       image: 'images/out3.JPG',
-      caption: "Some pictures going out"
+      caption: "Me and you drunkie"
     },
     {
       image: 'images/out1.JPG',
@@ -455,16 +459,12 @@ const App = () => {
     },
     {
       image: 'images/out8.png',
-      caption: ""
+      caption: "Mehul's blurry picture"
     },
     {
       image: 'images/out9.JPEG',
       caption: ""
     },
-    {
-      image: 'images/out9.png',
-      caption: ""
-    }
   ];
 
   const panda = [
@@ -504,11 +504,11 @@ const App = () => {
       caption: "Where it all began"
     },
     {
-      image: 'images/rl2.png',
+      image: 'images/rl6.png',
       caption: ""
     },
     {
-      image: 'images/rl6.png',
+      image: 'images/rl2.png',
       caption: ""
     },
   ];
@@ -524,7 +524,7 @@ const App = () => {
     },
     {
       image: 'images/seattle4.png',
-      caption: ""
+      caption: "Rip apple watch #2"
     },
     {
       image: 'images/seattle4.JPG',
@@ -575,7 +575,7 @@ const App = () => {
     },
     {
       image: 'images/ween1.JPG',
-      caption: ""
+      caption: "Mike Box"
     },
     {
       image: 'images/ween2.JPG',
@@ -591,7 +591,7 @@ const App = () => {
     },
     {
       image: 'images/ween5.JPG',
-      caption: ""
+      caption: "When we won a free drink"
     },
     {
       image: 'images/ween7.JPG',
@@ -599,7 +599,7 @@ const App = () => {
     },
     {
       image: 'images/ween8.JPG',
-      caption: ""
+      caption: "My Buzz"
     },
     {
       image: 'images/ween9.png',
@@ -634,8 +634,8 @@ const App = () => {
 
   useEffect(() => {
     window
-    .matchMedia("(min-width: 768px)")
-    .addEventListener('change', e => setMatches( e.matches ));
+      .matchMedia("(min-width: 768px)")
+      .addEventListener('change', e => setMatches(e.matches));
   }, []);
 
   const options = {
@@ -707,10 +707,11 @@ const App = () => {
     await loadFull(engine);
   }, []);
 
+
   return (
     <div className="App">
       <div className="background">
-        <Particles options={options} init={particlesInit} />    
+        <Particles options={options} init={particlesInit} />
       </div>
       <div className="body">
         <h1 className="title">Kari & Mike's Memories</h1>
@@ -718,39 +719,41 @@ const App = () => {
         <h3 className="subtitle">Click on the circles to explore our best moments together!</h3>
         {/* computer screen */}
         {matches && (
-            <div className="memories">
-              <Memory location={'10vw'} data={rl}/>
-              <Memory location={'70vw'} data={out}/>
-              <Memory location={'30vw'} data={hallo}/>
-              <Memory location={'80vw'} data={gat}/>
-              <Memory location={'50vw'} data={panda}/>
-              <Memory location={'10vw'} data={aug}/>
-              <Memory location={'80vw'} data={kbday}/>
-              <Memory location={'40vw'} data={cruise}/>
-              <Memory location={'10vw'} data={mbday}/>
-              <Memory location={'75vw'} data={seattle}/>
-              <Memory location={'50vw'} data={game}/>
-              <Memory location={'20vw'} data={ween}/>
-              <Memory location={'60vw'} data={grad}/>
-            </div>
+          <div className="memories">
+            <Memory location={'10vw'} data={rl} />
+            <Memory location={'70vw'} data={out} />
+            <Memory location={'30vw'} data={hallo} />
+            <Memory location={'80vw'} data={gat} />
+            <Memory location={'50vw'} data={panda} />
+            <Memory location={'10vw'} data={aug} />
+            <Memory location={'80vw'} data={kbday} />
+            <Memory location={'40vw'} data={cruise} />
+            <Memory location={'10vw'} data={mbday} />
+            <Memory location={'75vw'} data={seattle} />
+            <Memory location={'50vw'} data={game} />
+            <Memory location={'20vw'} data={ween} />
+            <Memory location={'60vw'} data={grad} />
+
+
+          </div>
         )}
         {/* phone screen */}
         {!matches && (
-            <div className="memories">
-              <Memory location={'5vw'} data={rl}/>
-              <Memory location={'60vw'} data={out}/>
-              <Memory location={'20vw'} data={hallo}/>
-              <Memory location={'65vw'} data={gat}/>
-              <Memory location={'12vw'} data={panda}/>
-              <Memory location={'55vw'} data={aug}/>
-              <Memory location={'15vw'} data={kbday}/>
-              <Memory location={'50vw'} data={cruise}/>
-              <Memory location={'10vw'} data={mbday}/>
-              <Memory location={'52vw'} data={seattle}/>
-              <Memory location={'15vw'} data={game}/>
-              <Memory location={'65vw'} data={ween}/>
-              <Memory location={'20vw'} data={grad}/>
-            </div>
+          <div className="memories">
+            <Memory location={'5vw'} data={rl} />
+            <Memory location={'60vw'} data={out} />
+            <Memory location={'20vw'} data={hallo} />
+            <Memory location={'65vw'} data={gat} />
+            <Memory location={'12vw'} data={panda} />
+            <Memory location={'55vw'} data={aug} />
+            <Memory location={'15vw'} data={kbday} />
+            <Memory location={'50vw'} data={cruise} />
+            <Memory location={'10vw'} data={mbday} />
+            <Memory location={'52vw'} data={seattle} />
+            <Memory location={'15vw'} data={game} />
+            <Memory location={'65vw'} data={ween} />
+            <Memory location={'20vw'} data={grad} />
+          </div>
         )}
       </div>
     </div>
