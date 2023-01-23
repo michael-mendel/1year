@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Modal from 'react-modal'
 import { Carousel } from 'react-carousel-minimal';
-
+import { AiFillCloseCircle } from 'react-icons/ai';
 
 
 
@@ -47,7 +47,7 @@ export default function Memory
         >
           <div className='modalDiv'>
             <div className="modalRow">
-              <button className='modalClose' onClick={() => { setModalIsOpen(false) }}>X</button>
+              <AiFillCloseCircle color='red' size='30pt' onClick={() => { setModalIsOpen(false) } } />
             </div>
             <Carousel
               data={props.data}
@@ -66,12 +66,21 @@ export default function Memory
               slideBackgroundColor="none"
               slideImageFit="contain"
               thumbnails={true}
-              thumbnailWidth="100px"
+              thumbnailWidth="50px"
               style={{
                 textAlign: "center",
                 maxWidth: "600px",
                 maxHeight: "500px",
                 margin: "40px auto",
+                width: "100%",
+                height:"100%",
+                alignItems:"center",
+                justifyContent:"center",
+                backgroundColor: 'red',
+                display:"flex",
+                flexDirection:"column",
+                margin: "10px",
+                padding: "10px"
               }}
             />
           </div>
@@ -82,7 +91,7 @@ export default function Memory
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={() => setModalIsOpen(false)}
-          className='modal'
+          className='modalSmall'
           style={{
             overlay: {
               backgroundColor: 'none'
@@ -92,9 +101,9 @@ export default function Memory
         >
           <div className='modalDivSmall'>
             <div className="modalRowSmall">
-              <button className='modalCloseSmall' onClick={() => { setModalIsOpen(false) }}>X</button>
+              <AiFillCloseCircle color="red" size={"25pt"} onClick={() => { setModalIsOpen(false) }} />
             </div>
-            <div className= "carouselDivSmall">
+            <div className="carouselDivSmall">
               <Carousel
                 data={props.data}
                 time={2000}
@@ -117,18 +126,19 @@ export default function Memory
                   textAlign: "center",
                   maxWidth: "100%",
                   maxHeight: "100%",
-                  width:"100%",
-                  height:"100",                   
+                  width: "100%",
+                  height: "100",
                   margin: "10px",
                   padding: "10px",
-                  // backgroundColor: 'red',
+                  backgroundColor: 'black',
                   // display:'flex',
                   // justifyContent:'center',
-                  // alignItems:'center'
+                  // alignItems:'center',
+                  // flexDirection:'column'
                 }}
               />
-              </div>
             </div>
+          </div>
         </Modal>
       )}
 

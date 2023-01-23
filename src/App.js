@@ -5,8 +5,16 @@ import './App.css';
 import Memory from "./Memory";
 import React, { useState, useEffect } from "react";
 
-
 const App = () => {
+
+  const data = [
+    {
+      image: 'images/aug5.png',
+      caption: ""
+    },
+    
+    
+  ];
 
   const [matches, setMatches] = useState(
     window.matchMedia("(min-width: 768px)").matches
@@ -87,34 +95,15 @@ const App = () => {
     await loadFull(engine);
   }, []);
 
-
-  const data = [
-    {
-      image: "https://www.shutterstock.com/image-photo/high-altitude-vertical-aerial-sunny-260nw-1282914517.jpg",
-      caption: ""
-    },
-    {
-      image: "https://www.shutterstock.com/image-photo/high-altitude-vertical-aerial-sunny-260nw-1282914517.jpg",
-      caption: ""
-    },
-    {
-      image: "https://www.shutterstock.com/image-photo/high-altitude-vertical-aerial-sunny-260nw-1282914517.jpg",
-      caption: ""
-    },
-    {
-      image: "https://cdn.britannica.com/s:800x450,c:crop/35/204435-138-2F2B745A/Time-lapse-hyper-lapse-Isle-Skye-Scotland.jpg",
-      caption: "Scotland"
-    },
-    
-  ];
-
   return (
     <div className="App">
       <div className="background">
         <Particles options={options} init={particlesInit} />    
       </div>
       <div className="body">
-        <h1 className="title">Hello world</h1>
+        <h1 className="title">Kari & Mike's Memories</h1>
+        <h3 className="subtitle">Happy 1 Year Anniversary!</h3>
+        <h3 className="subtitle">Click on the circles to explore our best moments together!</h3>
         {/* computer screen */}
         {matches && (
             <div className="memories">
