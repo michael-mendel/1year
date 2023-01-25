@@ -644,7 +644,7 @@ const App = () => {
     },
     particles: {
       number: {
-        value: 100,
+        value: 120,
         density: {
           enable: true,
           area: 800
@@ -663,7 +663,7 @@ const App = () => {
         value: { min: 1, max: 2 }
       },
       links: {
-        enable: true,
+        enable: false,
         distance: 170,
         color: "#808080",
         opacity: 0.4,
