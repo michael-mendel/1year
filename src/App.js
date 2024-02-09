@@ -635,24 +635,24 @@ const App = () => {
       image: 'images2/boat1.png',
       caption: ""
     },
-    {
-      image: 'images2/boat2.png',
-      caption: ""
-    },
+    // {
+    //   image: 'images2/boat2.png',
+    //   caption: ""
+    // },
     {
       image: 'images2/boat3.png',
       caption: ""
     },
     {
-      image: 'images2/boat4.png',
+      image: 'images2/boat4.jpeg',
       caption: ""
     },
     {
-      image: 'images2/boat5.png',
+      image: 'images2/boat5.jpeg',
       caption: ""
     },
     {
-      image: 'images2/boat6.png',
+      image: 'images2/boat6.jpeg',
       caption: ""
     }
   ];
