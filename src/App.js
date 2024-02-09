@@ -906,54 +906,54 @@ const App = () => {
 
   const y2_flor = [
     {
-      image: 'images2/flor1.png',
+      image: 'images2/flor1.jpeg',
       caption: ""
     },
     {
-      image: 'images2/flor2.png',
+      image: 'images2/flor2.jpeg',
       caption: ""
     },
     {
-      image: 'images2/flor3.png',
+      image: 'images2/flor3.jpeg',
       caption: ""
     },
     {
-      image: 'images2/flor4.png',
+      image: 'images2/flor4.jpeg',
       caption: ""
     },
     {
-      image: 'images2/flor5.png',
+      image: 'images2/flor5.jpeg',
       caption: ""
     },
     {
-      image: 'images2/flor6.png',
+      image: 'images2/flor6.jpeg',
       caption: ""
     },
     {
-      image: 'images2/flor7.png',
+      image: 'images2/flor7.jpeg',
       caption: ""
     },
     {
-      image: 'images2/flor8.png',
+      image: 'images2/flor8.jpeg',
       caption: ""
     },
     {
-      image: 'images2/flor9.png',
+      image: 'images2/flor9.jpeg',
       caption: ""
     },
     {
-      image: 'images2/flor10.png',
+      image: 'images2/flor10.jpeg',
       caption: ""
     }
   ];
 
   const y2_kgrad = [
     {
-      image: 'images2/grad1.png',
+      image: 'images2/grad1.jpeg',
       caption: ""
     },
     {
-      image: 'images2/grad2.png',
+      image: 'images2/grad2.jpeg',
       caption: ""
     },
     {
@@ -961,30 +961,30 @@ const App = () => {
       caption: ""
     },
     {
-      image: 'images2/grad3.png',
+      image: 'images2/grad3.jpeg',
       caption: ""
     },
     {
-      image: 'images2/grad4.png',
+      image: 'images2/grad4.jpeg',
       caption: ""
     },
     {
-      image: 'images2/grad5.png',
+      image: 'images2/grad5.jpeg',
       caption: ""
     }
   ];
 
   const y2_wed = [
     {
-      image: 'images2/wed1.png',
+      image: 'images2/wed1.jpeg',
       caption: ""
     },
     {
-      image: 'images2/wed2.png',
+      image: 'images2/wed2.jpeg',
       caption: ""
     },
     {
-      image: 'images2/wed3.png',
+      image: 'images2/wed3.jpeg',
       caption: ""
     }
   ];
