@@ -780,67 +780,67 @@ const App = () => {
 
   const y2_italy = [
     {
-      image: 'images2/italy1.png',
+      image: 'images2/italy1.jpeg',
       caption: ""
     },
     {
-      image: 'images2/italy2.png',
+      image: 'images2/italy2.jpeg',
       caption: ""
     },
     {
-      image: 'images2/italy3.png',
+      image: 'images2/italy3.jpeg',
       caption: ""
     },
     {
-      image: 'images2/italy4.png',
+      image: 'images2/italy4.jpeg',
       caption: ""
     },
     {
-      image: 'images2/italy5.png',
+      image: 'images2/italy5.jpeg',
       caption: ""
     },
     {
-      image: 'images2/italy6.png',
+      image: 'images2/italy6.jpeg',
       caption: ""
     },
     {
-      image: 'images2/italy7.png',
+      image: 'images2/italy7.jpeg',
       caption: ""
     },
     {
-      image: 'images2/italy8.png',
+      image: 'images2/italy8.jpeg',
       caption: ""
     },
     {
-      image: 'images2/italy9.png',
+      image: 'images2/italy9.jpeg',
       caption: ""
     },
     {
-      image: 'images2/italy10.png',
+      image: 'images2/italy10.jpeg',
       caption: ""
     },
     {
-      image: 'images2/italy11.png',
+      image: 'images2/italy11.jpeg',
       caption: ""
     },
     {
-      image: 'images2/italy12.png',
+      image: 'images2/italy12.jpeg',
       caption: ""
     },
     {
-      image: 'images2/italy13.png',
+      image: 'images2/italy13.jpeg',
       caption: ""
     },
     {
-      image: 'images2/italy14.png',
+      image: 'images2/italy14.jpeg',
       caption: ""
     },
     {
-      image: 'images2/italy15.png',
+      image: 'images2/italy15.jpeg',
       caption: ""
     },
     {
-      image: 'images2/italy16.png',
+      image: 'images2/italy16.jpeg',
       caption: ""
     },
     {
