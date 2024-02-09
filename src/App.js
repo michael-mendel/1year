@@ -1,8 +1,11 @@
 import React, { useCallback, useEffect, useState } from "react";
-import Particles from "react-particles";
+// import Particles from "react-particles";
+import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { loadSlim } from "tsparticles-slim";
 import './App.css';
 import Memory from "./Memory";
+import Preloader from './Preloader';
 
 const App = () => {
 
@@ -627,6 +630,441 @@ const App = () => {
     }
   ];
 
+  const y2_boat = [
+    {
+      image: 'images2/boat1.png',
+      caption: ""
+    },
+    {
+      image: 'images2/boat2.png',
+      caption: ""
+    },
+    {
+      image: 'images2/boat3.png',
+      caption: ""
+    },
+    {
+      image: 'images2/boat4.png',
+      caption: ""
+    },
+    {
+      image: 'images2/boat5.png',
+      caption: ""
+    },
+    {
+      image: 'images2/boat6.png',
+      caption: ""
+    }
+  ];
+
+  const y2_club = [
+    {
+      image: 'images2/club1.png',
+      caption: ""
+    },
+    {
+      image: 'images2/club2.png',
+      caption: ""
+    },
+    {
+      image: 'images2/club3.png',
+      caption: ""
+    },
+    {
+      image: 'images2/club4.png',
+      caption: ""
+    },
+    {
+      image: 'images2/club5.png',
+      caption: ""
+    },
+    {
+      image: 'images2/club6.png',
+      caption: ""
+    },
+    {
+      image: 'images2/club6.JPG',
+      caption: ""
+    },
+    {
+      image: 'images2/club1.GIF',
+      caption: ""
+    },
+    {
+      image: 'images2/club2.GIF',
+      caption: ""
+    },
+    {
+      image: 'images2/club3.GIF',
+      caption: ""
+    },
+    {
+      image: 'images2/club4.GIF',
+      caption: ""
+    }
+  ];
+
+  const y2_paris = [
+    {
+      image: 'images2/paris1.png',
+      caption: ""
+    },
+    {
+      image: 'images2/paris2.png',
+      caption: ""
+    },
+    {
+      image: 'images2/paris3.png',
+      caption: ""
+    },
+    {
+      image: 'images2/paris4.png',
+      caption: ""
+    },
+    {
+      image: 'images2/paris5.png',
+      caption: ""
+    },
+    {
+      image: 'images2/paris6.png',
+      caption: ""
+    },
+    {
+      image: 'images2/paris7.png',
+      caption: ""
+    },
+    {
+      image: 'images2/paris8.png',
+      caption: ""
+    }
+  ];
+
+  const y2_ita = [
+    {
+      image: 'images2/ita1.png',
+      caption: ""
+    },
+    {
+      image: 'images2/ita2.png',
+      caption: ""
+    },
+    {
+      image: 'images2/ita3.png',
+      caption: ""
+    },
+    {
+      image: 'images2/ita4.png',
+      caption: ""
+    },
+    {
+      image: 'images2/ita5.png',
+      caption: ""
+    },
+    {
+      image: 'images2/ita6.png',
+      caption: ""
+    },
+    {
+      image: 'images2/ita7.png',
+      caption: ""
+    },
+    {
+      image: 'images2/ita8.png',
+      caption: ""
+    },
+    {
+      image: 'images2/ita9.png',
+      caption: ""
+    },
+    {
+      image: 'images2/ita10.png',
+      caption: ""
+    }
+  ];
+
+  const y2_italy = [
+    {
+      image: 'images2/italy1.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy2.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy3.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy4.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy5.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy6.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy7.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy8.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy9.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy10.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy11.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy12.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy13.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy14.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy15.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy16.png',
+      caption: ""
+    },
+    {
+      image: 'images2/italy16.GIF',
+      caption: ""
+    }
+  ];
+
+  const y2_pisa = [
+    {
+      image: 'images2/pisa1.png',
+      caption: ""
+    },
+    {
+      image: 'images2/pisa2.png',
+      caption: ""
+    },
+    {
+      image: 'images2/pisa3.png',
+      caption: ""
+    },
+    {
+      image: 'images2/pisa4.png',
+      caption: ""
+    },
+    {
+      image: 'images2/pisa5.png',
+      caption: ""
+    },
+    {
+      image: 'images2/pisa6.png',
+      caption: ""
+    },
+    {
+      image: 'images2/pisa7.png',
+      caption: ""
+    },
+    {
+      image: 'images2/pisa8.png',
+      caption: ""
+    },
+    {
+      image: 'images2/pisa9.png',
+      caption: ""
+    },
+    {
+      image: 'images2/pisa10.png',
+      caption: ""
+    },
+    {
+      image: 'images2/pisa11.png',
+      caption: ""
+    },
+    {
+      image: 'images2/pisa12.png',
+      caption: ""
+    },
+    {
+      image: 'images2/pisa13.png',
+      caption: ""
+    }
+  ];
+
+  const y2_flor = [
+    {
+      image: 'images2/flor1.png',
+      caption: ""
+    },
+    {
+      image: 'images2/flor2.png',
+      caption: ""
+    },
+    {
+      image: 'images2/flor3.png',
+      caption: ""
+    },
+    {
+      image: 'images2/flor4.png',
+      caption: ""
+    },
+    {
+      image: 'images2/flor5.png',
+      caption: ""
+    },
+    {
+      image: 'images2/flor6.png',
+      caption: ""
+    },
+    {
+      image: 'images2/flor7.png',
+      caption: ""
+    },
+    {
+      image: 'images2/flor8.png',
+      caption: ""
+    },
+    {
+      image: 'images2/flor9.png',
+      caption: ""
+    },
+    {
+      image: 'images2/flor10.png',
+      caption: ""
+    }
+  ];
+
+  const y2_kgrad = [
+    {
+      image: 'images2/grad1.png',
+      caption: ""
+    },
+    {
+      image: 'images2/grad2.png',
+      caption: ""
+    },
+    {
+      image: 'images2/grad.GIF',
+      caption: ""
+    },
+    {
+      image: 'images2/grad3.png',
+      caption: ""
+    },
+    {
+      image: 'images2/grad4.png',
+      caption: ""
+    },
+    {
+      image: 'images2/grad5.png',
+      caption: ""
+    }
+  ];
+
+  const y2_wed = [
+    {
+      image: 'images2/wed1.png',
+      caption: ""
+    },
+    {
+      image: 'images2/wed2.png',
+      caption: ""
+    },
+    {
+      image: 'images2/wed3.png',
+      caption: ""
+    }
+  ];
+
+  const y2_shab = [
+    {
+      image: 'images2/shab1.png',
+      caption: ""
+    },
+    {
+      image: 'images2/shab2.png',
+      caption: ""
+    },
+    {
+      image: 'images2/shab3.png',
+      caption: ""
+    },
+    {
+      image: 'images2/shab.GIF',
+      caption: ""
+    }
+  ];
+
+  const y2_paco = [
+    {
+      image: 'images2/bday.GIF',
+      caption: ""
+    },
+    {
+      image: 'images2/paco.png',
+      caption: ""
+    }
+  ];
+
+  const y2_halo = [
+    {
+      image: 'images2/halo1.png',
+      caption: ""
+    },
+    {
+      image: 'images2/halo2.png',
+      caption: ""
+    },
+    {
+      image: 'images2/halo3.png',
+      caption: ""
+    },
+    {
+      image: 'images2/halo4.png',
+      caption: ""
+    },
+    {
+      image: 'images2/halo5.png',
+      caption: ""
+    },
+    {
+      image: 'images2/halo6.png',
+      caption: ""
+    },
+    {
+      image: 'images2/halo7.png',
+      caption: ""
+    },
+    {
+      image: 'images2/halo8.png',
+      caption: ""
+    },
+    {
+      image: 'images2/halo9.png',
+      caption: ""
+    },
+    {
+      image: 'images2/halo10.png',
+      caption: ""
+    },
+  ];
 
   const [matches, setMatches] = useState(
     window.matchMedia("(min-width: 768px)").matches
@@ -707,11 +1145,39 @@ const App = () => {
     await loadFull(engine);
   }, []);
 
+  const imagesToPreload = [
+    ...aug.map(item => item.image),
+    ...cruise.map(item => item.image),
+    ...game.map(item => item.image),
+    ...gat.map(item => item.image),
+    ...grad.map(item => item.image),
+    ...hallo.map(item => item.image),
+    ...kbday.map(item => item.image),
+    ...mbday.map(item => item.image),
+    ...out.map(item => item.image),
+    ...panda.map(item => item.image),
+    ...rl.map(item => item.image),
+    ...seattle.map(item => item.image),
+    ...ween.map(item => item.image),
+    ...y2_boat.map(item => item.image),
+    ...y2_club.map(item => item.image),
+    ...y2_paris.map(item => item.image),
+    ...y2_ita.map(item => item.image),
+    ...y2_italy.map(item => item.image),
+    ...y2_pisa.map(item => item.image),
+    ...y2_flor.map(item => item.image),
+    ...y2_kgrad.map(item => item.image),
+    ...y2_wed.map(item => item.image),
+    ...y2_shab.map(item => item.image),
+    ...y2_paco.map(item => item.image),
+    ...y2_halo.map(item => item.image),
+  ];  
 
   return (
     <div className="App">
+      <Preloader images={imagesToPreload} />
       <div className="background">
-        <Particles options={options} init={particlesInit} />
+        {/* <Particles options={options} init={particlesInit} /> */}
       </div>
       <div className="body">
         <h1 className="title">Kari & Mike's Memories</h1>
@@ -720,6 +1186,8 @@ const App = () => {
         {/* computer screen */}
         {matches && (
           <div className="memories">
+            {/* year 1 */}
+            <h3 className="subtitle">Chapter 1</h3>
             <Memory location={'10vw'} data={rl} />
             <Memory location={'70vw'} data={out} />
             <Memory location={'30vw'} data={hallo} />
@@ -734,12 +1202,27 @@ const App = () => {
             <Memory location={'20vw'} data={ween} />
             <Memory location={'60vw'} data={grad} />
 
-
+            {/* year 2 */}
+            <h3 className="subtitle">Chapter 2</h3>
+            <Memory location={'10vw'} data={y2_boat} />
+            <Memory location={'70vw'} data={y2_club} />
+            <Memory location={'30vw'} data={y2_shab} />
+            <Memory location={'80vw'} data={y2_paris} />
+            <Memory location={'50vw'} data={y2_ita} />
+            <Memory location={'10vw'} data={y2_italy} />
+            <Memory location={'80vw'} data={y2_pisa} />
+            <Memory location={'40vw'} data={y2_flor} />
+            <Memory location={'10vw'} data={y2_paco} />
+            <Memory location={'75vw'} data={y2_wed} />
+            <Memory location={'50vw'} data={y2_kgrad} />
+            <Memory location={'20vw'} data={y2_halo} />
           </div>
         )}
         {/* phone screen */}
         {!matches && (
           <div className="memories">
+            {/* year 1 */}
+            <h3 className="subtitle">Chapter 1</h3>
             <Memory location={'5vw'} data={rl} />
             <Memory location={'60vw'} data={out} />
             <Memory location={'20vw'} data={hallo} />
@@ -753,6 +1236,21 @@ const App = () => {
             <Memory location={'15vw'} data={game} />
             <Memory location={'65vw'} data={ween} />
             <Memory location={'20vw'} data={grad} />
+
+            {/* year 2 */}
+            <h3 className="subtitle">Chapter 2</h3>
+            <Memory location={'5vw'} data={y2_boat} />
+            <Memory location={'60vw'} data={y2_club} />
+            <Memory location={'20vw'} data={y2_shab} />
+            <Memory location={'65vw'} data={y2_paris} />
+            <Memory location={'12vw'} data={y2_ita} />
+            <Memory location={'55vw'} data={y2_italy} />
+            <Memory location={'15vw'} data={y2_pisa} />
+            <Memory location={'50vw'} data={y2_flor} />
+            <Memory location={'52vw'} data={y2_paco} />
+            <Memory location={'15vw'} data={y2_wed} />
+            <Memory location={'65vw'} data={y2_kgrad} />
+            <Memory location={'20vw'} data={y2_halo} />
           </div>
         )}
       </div>
