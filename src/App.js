@@ -1014,11 +1014,11 @@ const App = () => {
       caption: ""
     },
     {
-      image: 'images2/paco.png',
+      image: 'images2/paco.jpeg',
       caption: ""
     },
     {
-      image: 'images2/baxter.png',
+      image: 'images2/baxter.jpeg',
       caption: ""
     }
   ];
