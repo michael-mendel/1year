@@ -851,31 +851,31 @@ const App = () => {
 
   const y2_pisa = [
     {
-      image: 'images2/pisa1.png',
+      image: 'images2/pisa1.jpeg',
       caption: ""
     },
     {
-      image: 'images2/pisa2.png',
+      image: 'images2/pisa2.jpeg',
       caption: ""
     },
     {
-      image: 'images2/pisa3.png',
+      image: 'images2/pisa3.jpeg',
       caption: ""
     },
     {
-      image: 'images2/pisa4.png',
+      image: 'images2/pisa4.jpeg',
       caption: ""
     },
     {
-      image: 'images2/pisa5.png',
+      image: 'images2/pisa5.jpeg',
       caption: ""
     },
     {
-      image: 'images2/pisa6.png',
+      image: 'images2/pisa6.jpeg',
       caption: ""
     },
     {
-      image: 'images2/pisa7.png',
+      image: 'images2/pisa7.jpeg',
       caption: ""
     },
     {
@@ -883,23 +883,23 @@ const App = () => {
       caption: ""
     },
     {
-      image: 'images2/pisa9.png',
+      image: 'images2/pisa9.jpeg',
       caption: ""
     },
     {
-      image: 'images2/pisa10.png',
+      image: 'images2/pisa10.jpeg',
       caption: ""
     },
     {
-      image: 'images2/pisa11.png',
+      image: 'images2/pisa11.jpeg',
       caption: ""
     },
     {
-      image: 'images2/pisa12.png',
+      image: 'images2/pisa12.jpeg',
       caption: ""
     },
     {
-      image: 'images2/pisa13.png',
+      image: 'images2/pisa13.jpeg',
       caption: ""
     }
   ];
