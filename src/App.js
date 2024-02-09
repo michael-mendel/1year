@@ -659,6 +659,10 @@ const App = () => {
 
   const y2_club = [
     {
+      image: 'images2/club4.GIF',
+      caption: ""
+    },
+    {
       image: 'images2/club1.png',
       caption: ""
     },
@@ -667,11 +671,19 @@ const App = () => {
       caption: ""
     },
     {
+      image: 'images2/club2.GIF',
+      caption: ""
+    },
+    {
       image: 'images2/club3.png',
       caption: ""
     },
     {
       image: 'images2/club4.png',
+      caption: ""
+    },
+    {
+      image: 'images2/club3.GIF',
       caption: ""
     },
     {
@@ -684,18 +696,6 @@ const App = () => {
     },
     {
       image: 'images2/club.GIF',
-      caption: ""
-    },
-    {
-      image: 'images2/club2.GIF',
-      caption: ""
-    },
-    {
-      image: 'images2/club3.GIF',
-      caption: ""
-    },
-    {
-      image: 'images2/club4.GIF',
       caption: ""
     }
   ];
@@ -1082,7 +1082,7 @@ const App = () => {
     },
     particles: {
       number: {
-        value: 120,
+        value: 50,
         density: {
           enable: true,
           area: 800
@@ -1141,6 +1141,190 @@ const App = () => {
     }
   };
 
+  const emitterRate = {
+    delay: 0.1,
+    quantity: 2
+  };
+  const options2 = {
+    particles: {
+      opacity: {
+        value: 1
+      },
+      size: {
+        value: {
+          min: 16,
+          max: 32
+        }
+      },
+      move: {
+        enable: true,
+        gravity: {
+          enable: true
+        },
+        speed: 15,
+        outModes: {
+          default: "destroy",
+          top: "none"
+        }
+      },
+      rotate: {
+        value: {
+          min: 0,
+          max: 360
+        },
+        direction: "random",
+        move: true,
+        animation: {
+          enable: true,
+          speed: 60
+        }
+      },
+      tilt: {
+        direction: "random",
+        enable: true,
+        move: true,
+        value: {
+          min: 0,
+          max: 360
+        },
+        animation: {
+          enable: true,
+          speed: 60
+        }
+      },
+      roll: {
+        darken: {
+          enable: true,
+          value: 30
+        },
+        enlighten: {
+          enable: true,
+          value: 30
+        },
+        enable: true,
+        mode: "both",
+        speed: {
+          min: 15,
+          max: 25
+        }
+      },
+      wobble: {
+        distance: 30,
+        enable: true,
+        move: true,
+        speed: {
+          min: -15,
+          max: 15
+        }
+      }
+    },
+    background: {
+      color: "#000000"
+    },
+    emitters: [
+      {
+        position: {
+          x: 0,
+          y: 33
+        },
+        rate: emitterRate,
+        particles: {
+          move: {
+            direction: "top-right"
+          },
+          shape: {
+            type: "emoji",
+            options: {
+              emoji: {
+                value: "🦄"
+              }
+            }
+          }
+        }
+      },
+      {
+        position: {
+          x: 0,
+          y: 66
+        },
+        rate: emitterRate,
+        particles: {
+          move: {
+            direction: "top-right"
+          },
+          shape: {
+            type: "emoji",
+            options: {
+              emoji: {
+                value: "🌈"
+              }
+            }
+          }
+        }
+      },
+      {
+        position: {
+          x: 100,
+          y: 33
+        },
+        rate: emitterRate,
+        particles: {
+          move: {
+            direction: "top-left"
+          },
+          shape: {
+            type: "emoji",
+            options: {
+              emoji: {
+                value: "🎉"
+              }
+            }
+          }
+        }
+      },
+      {
+        position: {
+          x: 100,
+          y: 66
+        },
+        rate: emitterRate,
+        particles: {
+          move: {
+            direction: "top-left"
+          },
+          shape: {
+            type: "emoji",
+            options: {
+              emoji: {
+                value: "🤡"
+              }
+            }
+          }
+        }
+      },
+      {
+        position: {
+          x: 50,
+          y: 50
+        },
+        rate: emitterRate,
+        particles: {
+          move: {
+            direction: "top"
+          },
+          shape: {
+            type: "emoji",
+            options: {
+              emoji: {
+                value: "👻"
+              }
+            }
+          }
+        }
+      }
+    ]
+  };
+
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
@@ -1173,16 +1357,37 @@ const App = () => {
     ...y2_halo.map(item => item.image),
   ];  
 
+  const [isScrolledPastPoint, setIsScrolledPastPoint] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentPosition = window.scrollY;
+      setIsScrolledPastPoint(currentPosition > 1400);
+    };
+
+    // Initial check when component mounts
+    handleScroll();
+
+    // Attach event listener when component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove event listener when component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="App">
       <Preloader images={imagesToPreload} />
       <div className="background">
-        {/* <Particles options={options} init={particlesInit} /> */}
+        
+        <Particles options={isScrolledPastPoint ? options2 : options} init={particlesInit} /> :
+
       </div>
       <div className="body">
         <h1 className="title">Kari & Mike's Memories</h1>
         <h3 className="subtitle">Happy 2 Year Anniversary!</h3>
-        <h3 className="subtitle">Click on the circles to explore our best moments together!</h3>
         {/* computer screen */}
         {matches && (
           <div className="memories">

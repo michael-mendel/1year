@@ -62,7 +62,7 @@ export default function Memory
             </div>
             <Carousel
               data={props.data}
-              time={2000}
+              time={2500}
               width="850px"
               height="400px"
               captionStyle={captionStyle}
@@ -117,7 +117,7 @@ export default function Memory
             <div className="carouselDivSmall">
               <Carousel
                 data={props.data}
-                time={2000}
+                time={2500}
                 width="100%"
                 height="100"
                 captionStyle={captionStyle}
