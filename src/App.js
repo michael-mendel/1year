@@ -715,7 +715,7 @@ const App = () => {
       </div>
       <div className="body">
         <h1 className="title">Kari & Mike's Memories</h1>
-        <h3 className="subtitle">Happy 1 Year Anniversary!</h3>
+        <h3 className="subtitle">Happy 2 Year Anniversary!</h3>
         <h3 className="subtitle">Click on the circles to explore our best moments together!</h3>
         {/* computer screen */}
         {matches && (
