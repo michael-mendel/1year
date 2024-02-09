@@ -675,10 +675,6 @@ const App = () => {
       caption: ""
     },
     {
-      image: 'images2/club5.png',
-      caption: ""
-    },
-    {
       image: 'images2/club6.png',
       caption: ""
     },
@@ -687,7 +683,7 @@ const App = () => {
       caption: ""
     },
     {
-      image: 'images2/club1.GIF',
+      image: 'images2/club.GIF',
       caption: ""
     },
     {
@@ -706,35 +702,35 @@ const App = () => {
 
   const y2_paris = [
     {
-      image: 'images2/paris1.png',
+      image: 'images2/paris1.jpeg',
       caption: ""
     },
     {
-      image: 'images2/paris2.png',
+      image: 'images2/paris2.jpeg',
       caption: ""
     },
     {
-      image: 'images2/paris3.png',
+      image: 'images2/paris3.jpeg',
       caption: ""
     },
     {
-      image: 'images2/paris4.png',
+      image: 'images2/paris4.jpeg',
       caption: ""
     },
     {
-      image: 'images2/paris5.png',
+      image: 'images2/paris5.jpeg',
       caption: ""
     },
     {
-      image: 'images2/paris6.png',
+      image: 'images2/paris6.jpeg',
       caption: ""
     },
     {
-      image: 'images2/paris7.png',
+      image: 'images2/paris7.jpeg',
       caption: ""
     },
     {
-      image: 'images2/paris8.png',
+      image: 'images2/paris8.jpeg',
       caption: ""
     }
   ];
@@ -995,15 +991,15 @@ const App = () => {
 
   const y2_shab = [
     {
-      image: 'images2/shab1.png',
+      image: 'images2/shab1.jpeg',
       caption: ""
     },
     {
-      image: 'images2/shab2.png',
+      image: 'images2/shab2.jpeg',
       caption: ""
     },
     {
-      image: 'images2/shab3.png',
+      image: 'images2/shab3.jpeg',
       caption: ""
     },
     {
