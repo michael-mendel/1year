@@ -1020,6 +1020,10 @@ const App = () => {
     {
       image: 'images2/paco.png',
       caption: ""
+    },
+    {
+      image: 'images2/baxter.png',
+      caption: ""
     }
   ];
 
