@@ -737,43 +737,43 @@ const App = () => {
 
   const y2_ita = [
     {
-      image: 'images2/ita1.png',
+      image: 'images2/ita1.jpeg',
       caption: ""
     },
     {
-      image: 'images2/ita2.png',
+      image: 'images2/ita2.jpeg',
       caption: ""
     },
     {
-      image: 'images2/ita3.png',
+      image: 'images2/ita3.jpeg',
       caption: ""
     },
     {
-      image: 'images2/ita4.png',
+      image: 'images2/ita4.jpeg',
       caption: ""
     },
     {
-      image: 'images2/ita5.png',
+      image: 'images2/ita5.jpeg',
       caption: ""
     },
     {
-      image: 'images2/ita6.png',
+      image: 'images2/ita6.jpeg',
       caption: ""
     },
     {
-      image: 'images2/ita7.png',
+      image: 'images2/ita7.jpeg',
       caption: ""
     },
     {
-      image: 'images2/ita8.png',
+      image: 'images2/ita8.jpeg',
       caption: ""
     },
     {
-      image: 'images2/ita9.png',
+      image: 'images2/ita9.jpeg',
       caption: ""
     },
     {
-      image: 'images2/ita10.png',
+      image: 'images2/ita10.jpeg',
       caption: ""
     }
   ];
