@@ -633,7 +633,11 @@ const App = () => {
   const y2_boat = [
     {
       image: 'images2/boat1.png',
-      caption: ""
+      caption: "To many more boat days"
+    },
+    {
+      image: 'images2/boat5.jpeg',
+      caption: "and pretty sunsets"
     },
     // {
     //   image: 'images2/boat2.png',
@@ -648,23 +652,19 @@ const App = () => {
       caption: ""
     },
     {
-      image: 'images2/boat5.jpeg',
-      caption: ""
-    },
-    {
       image: 'images2/boat6.jpeg',
-      caption: ""
+      caption: "pero mi-ami is broken rn"
     }
   ];
 
   const y2_club = [
     {
       image: 'images2/club4.GIF',
-      caption: ""
+      caption: "shots shots shots shots shots"
     },
     {
       image: 'images2/club1.png',
-      caption: ""
+      caption: "To more going out"
     },
     {
       image: 'images2/club2.png',
@@ -672,7 +672,7 @@ const App = () => {
     },
     {
       image: 'images2/club2.GIF',
-      caption: ""
+      caption: "My pro juggler"
     },
     {
       image: 'images2/club3.png',
@@ -692,18 +692,18 @@ const App = () => {
     },
     {
       image: 'images2/club6.JPG',
-      caption: ""
+      caption: "us drunkie"
     },
     {
       image: 'images2/club.GIF',
-      caption: ""
+      caption: "hungry mike"
     }
   ];
 
   const y2_paris = [
     {
       image: 'images2/paris1.jpeg',
-      caption: ""
+      caption: "We went to paris"
     },
     {
       image: 'images2/paris2.jpeg',
@@ -737,12 +737,12 @@ const App = () => {
 
   const y2_ita = [
     {
-      image: 'images2/ita1.jpeg',
-      caption: ""
+      image: 'images2/ita2.jpeg',
+      caption: "italiaaaa"
     },
     {
-      image: 'images2/ita2.jpeg',
-      caption: ""
+      image: 'images2/ita1.jpeg',
+      caption: "chinque tierreeee"
     },
     {
       image: 'images2/ita3.jpeg',
@@ -750,7 +750,7 @@ const App = () => {
     },
     {
       image: 'images2/ita4.jpeg',
-      caption: ""
+      caption: "aqua muy fredda"
     },
     {
       image: 'images2/ita5.jpeg',
@@ -774,7 +774,7 @@ const App = () => {
     },
     {
       image: 'images2/ita10.jpeg',
-      caption: ""
+      caption: "so pretty, lets go back"
     }
   ];
 
@@ -852,15 +852,15 @@ const App = () => {
   const y2_pisa = [
     {
       image: 'images2/pisa1.jpeg',
-      caption: ""
+      caption: "quick stop at pisa"
     },
     {
       image: 'images2/pisa2.jpeg',
-      caption: ""
+      caption: "yummy fiorentina"
     },
     {
       image: 'images2/pisa3.jpeg',
-      caption: ""
+      caption: "My strong strong girl"
     },
     {
       image: 'images2/pisa4.jpeg',
@@ -868,7 +868,7 @@ const App = () => {
     },
     {
       image: 'images2/pisa5.jpeg',
-      caption: ""
+      caption: "I stronger though"
     },
     {
       image: 'images2/pisa6.jpeg',
@@ -876,11 +876,11 @@ const App = () => {
     },
     {
       image: 'images2/pisa7.jpeg',
-      caption: ""
+      caption: "🍆🍆🍆"
     },
     {
-      image: 'images2/pisa8.png',
-      caption: ""
+      image: 'images2/pisa8.jpeg',
+      caption: "Lucaaaa. I need this again"
     },
     {
       image: 'images2/pisa9.jpeg',
@@ -888,7 +888,7 @@ const App = () => {
     },
     {
       image: 'images2/pisa10.jpeg',
-      caption: ""
+      caption: "I cant even put a caption on the next one cause itll cover your face"
     },
     {
       image: 'images2/pisa11.jpeg',
@@ -896,11 +896,11 @@ const App = () => {
     },
     {
       image: 'images2/pisa12.jpeg',
-      caption: ""
+      caption: "san jumanjiiiii"
     },
     {
       image: 'images2/pisa13.jpeg',
-      caption: ""
+      caption: "we ate the best gelato in the world"
     }
   ];
 
@@ -950,15 +950,15 @@ const App = () => {
   const y2_kgrad = [
     {
       image: 'images2/grad1.jpeg',
-      caption: ""
+      caption: "Your graduated!!!"
     },
     {
       image: 'images2/grad2.jpeg',
-      caption: ""
+      caption: "Im so proud of you"
     },
     {
       image: 'images2/grad.GIF',
-      caption: ""
+      caption: "Wohoo"
     },
     {
       image: 'images2/grad3.jpeg',
@@ -974,25 +974,10 @@ const App = () => {
     }
   ];
 
-  const y2_wed = [
-    {
-      image: 'images2/wed1.jpeg',
-      caption: ""
-    },
-    {
-      image: 'images2/wed2.jpeg',
-      caption: ""
-    },
-    {
-      image: 'images2/wed3.jpeg',
-      caption: ""
-    }
-  ];
-
   const y2_shab = [
     {
       image: 'images2/shab1.jpeg',
-      caption: ""
+      caption: "I thought these were cute"
     },
     {
       image: 'images2/shab2.jpeg',
@@ -1000,7 +985,7 @@ const App = () => {
     },
     {
       image: 'images2/shab3.jpeg',
-      caption: ""
+      caption: "To many more shabbats"
     },
     {
       image: 'images2/shab.GIF',
@@ -1011,15 +996,23 @@ const App = () => {
   const y2_paco = [
     {
       image: 'images2/bday.GIF',
+      caption: "You turned 22!"
+    },
+    {
+      image: 'images2/wed1.jpeg',
+      caption: "idk where to put this but theyre cute"
+    },
+    {
+      image: 'images2/wed2.jpeg',
       caption: ""
     },
     {
       image: 'images2/paco.jpeg',
-      caption: ""
+      caption: "Had to include paco"
     },
     {
       image: 'images2/baxter.jpeg',
-      caption: ""
+      caption: "baxters made the cut too"
     }
   ];
 
@@ -1141,188 +1134,40 @@ const App = () => {
     }
   };
 
-  const emitterRate = {
-    delay: 0.1,
-    quantity: 2
-  };
   const options2 = {
     particles: {
+      move: {
+        enable: true,
+        speed: { min: 1, max: 6 }
+      },
+      number: {
+        value: 20,
+        max: 30
+      },
       opacity: {
         value: 1
       },
+      rotate: {
+        path: true
+      },
+      shape: {
+        options: {
+          image: {
+            gif: true,
+            height: 200,
+            src: "images2/halo10.jpeg",
+            width: 200
+          }
+        },
+        type: "image"
+      },
       size: {
         value: {
-          min: 16,
-          max: 32
-        }
-      },
-      move: {
-        enable: true,
-        gravity: {
-          enable: true
-        },
-        speed: 15,
-        outModes: {
-          default: "destroy",
-          top: "none"
-        }
-      },
-      rotate: {
-        value: {
-          min: 0,
-          max: 360
-        },
-        direction: "random",
-        move: true,
-        animation: {
-          enable: true,
-          speed: 60
-        }
-      },
-      tilt: {
-        direction: "random",
-        enable: true,
-        move: true,
-        value: {
-          min: 0,
-          max: 360
-        },
-        animation: {
-          enable: true,
-          speed: 60
-        }
-      },
-      roll: {
-        darken: {
-          enable: true,
-          value: 30
-        },
-        enlighten: {
-          enable: true,
-          value: 30
-        },
-        enable: true,
-        mode: "both",
-        speed: {
-          min: 15,
-          max: 25
-        }
-      },
-      wobble: {
-        distance: 30,
-        enable: true,
-        move: true,
-        speed: {
-          min: -15,
-          max: 15
+          min: 32,
+          max: 64
         }
       }
-    },
-    background: {
-      color: "#000000"
-    },
-    emitters: [
-      {
-        position: {
-          x: 0,
-          y: 33
-        },
-        rate: emitterRate,
-        particles: {
-          move: {
-            direction: "top-right"
-          },
-          shape: {
-            type: "emoji",
-            options: {
-              emoji: {
-                value: "🦄"
-              }
-            }
-          }
-        }
-      },
-      {
-        position: {
-          x: 0,
-          y: 66
-        },
-        rate: emitterRate,
-        particles: {
-          move: {
-            direction: "top-right"
-          },
-          shape: {
-            type: "emoji",
-            options: {
-              emoji: {
-                value: "🌈"
-              }
-            }
-          }
-        }
-      },
-      {
-        position: {
-          x: 100,
-          y: 33
-        },
-        rate: emitterRate,
-        particles: {
-          move: {
-            direction: "top-left"
-          },
-          shape: {
-            type: "emoji",
-            options: {
-              emoji: {
-                value: "🎉"
-              }
-            }
-          }
-        }
-      },
-      {
-        position: {
-          x: 100,
-          y: 66
-        },
-        rate: emitterRate,
-        particles: {
-          move: {
-            direction: "top-left"
-          },
-          shape: {
-            type: "emoji",
-            options: {
-              emoji: {
-                value: "🤡"
-              }
-            }
-          }
-        }
-      },
-      {
-        position: {
-          x: 50,
-          y: 50
-        },
-        rate: emitterRate,
-        particles: {
-          move: {
-            direction: "top"
-          },
-          shape: {
-            type: "emoji",
-            options: {
-              emoji: {
-                value: "👻"
-              }
-            }
-          }
-        }
-      }
-    ]
+    }
   };
 
   const particlesInit = useCallback(async (engine) => {
@@ -1351,7 +1196,6 @@ const App = () => {
     ...y2_pisa.map(item => item.image),
     ...y2_flor.map(item => item.image),
     ...y2_kgrad.map(item => item.image),
-    ...y2_wed.map(item => item.image),
     ...y2_shab.map(item => item.image),
     ...y2_paco.map(item => item.image),
     ...y2_halo.map(item => item.image),
@@ -1382,7 +1226,9 @@ const App = () => {
       <Preloader images={imagesToPreload} />
       <div className="background">
         
-        <Particles options={isScrolledPastPoint ? options2 : options} init={particlesInit} /> :
+        <Particles 
+          options={options} 
+          init={particlesInit}/>
 
       </div>
       <div className="body">
@@ -1392,7 +1238,7 @@ const App = () => {
         {matches && (
           <div className="memories">
             {/* year 1 */}
-            <h3 className="subtitle">Chapter 1</h3>
+            <h3 className="chapter"> Chapter 1 </h3>
             <Memory location={'10vw'} data={rl} />
             <Memory location={'70vw'} data={out} />
             <Memory location={'30vw'} data={hallo} />
@@ -1408,7 +1254,7 @@ const App = () => {
             <Memory location={'60vw'} data={grad} />
 
             {/* year 2 */}
-            <h3 className="subtitle">Chapter 2</h3>
+            <h3 className="chapter"> Chapter 2 </h3>
             <Memory location={'10vw'} data={y2_boat} />
             <Memory location={'70vw'} data={y2_club} />
             <Memory location={'30vw'} data={y2_shab} />
@@ -1418,16 +1264,15 @@ const App = () => {
             <Memory location={'80vw'} data={y2_pisa} />
             <Memory location={'40vw'} data={y2_flor} />
             <Memory location={'10vw'} data={y2_paco} />
-            <Memory location={'75vw'} data={y2_wed} />
-            <Memory location={'50vw'} data={y2_kgrad} />
-            <Memory location={'20vw'} data={y2_halo} />
+            <Memory location={'70vw'} data={y2_kgrad} />
+            <Memory location={'50vw'} data={y2_halo} />
           </div>
         )}
         {/* phone screen */}
         {!matches && (
           <div className="memories">
             {/* year 1 */}
-            <h3 className="subtitle">Chapter 1</h3>
+            <h3 className="chapter"> Chapter 1 </h3>
             <Memory location={'5vw'} data={rl} />
             <Memory location={'60vw'} data={out} />
             <Memory location={'20vw'} data={hallo} />
@@ -1443,7 +1288,7 @@ const App = () => {
             <Memory location={'20vw'} data={grad} />
 
             {/* year 2 */}
-            <h3 className="subtitle">Chapter 2</h3>
+            <h3 className="chapter"> Chapter 2 </h3>
             <Memory location={'5vw'} data={y2_boat} />
             <Memory location={'60vw'} data={y2_club} />
             <Memory location={'20vw'} data={y2_shab} />
@@ -1453,7 +1298,6 @@ const App = () => {
             <Memory location={'15vw'} data={y2_pisa} />
             <Memory location={'50vw'} data={y2_flor} />
             <Memory location={'52vw'} data={y2_paco} />
-            <Memory location={'15vw'} data={y2_wed} />
             <Memory location={'65vw'} data={y2_kgrad} />
             <Memory location={'20vw'} data={y2_halo} />
           </div>
