@@ -1025,43 +1025,43 @@ const App = () => {
 
   const y2_halo = [
     {
-      image: 'images2/halo1.png',
+      image: 'images2/halo1.jpeg',
       caption: ""
     },
     {
-      image: 'images2/halo2.png',
+      image: 'images2/halo2.jpeg',
       caption: ""
     },
     {
-      image: 'images2/halo3.png',
+      image: 'images2/halo3.jpeg',
       caption: ""
     },
     {
-      image: 'images2/halo4.png',
+      image: 'images2/halo4.jpeg',
       caption: ""
     },
     {
-      image: 'images2/halo5.png',
+      image: 'images2/halo5.jpeg',
       caption: ""
     },
     {
-      image: 'images2/halo6.png',
+      image: 'images2/halo6.jpeg',
       caption: ""
     },
     {
-      image: 'images2/halo7.png',
+      image: 'images2/halo7.jpeg',
       caption: ""
     },
     {
-      image: 'images2/halo8.png',
+      image: 'images2/halo8.jpeg',
       caption: ""
     },
     {
-      image: 'images2/halo9.png',
+      image: 'images2/halo9.jpeg',
       caption: ""
     },
     {
-      image: 'images2/halo10.png',
+      image: 'images2/halo10.jpeg',
       caption: ""
     },
   ];
