@@ -18,7 +18,7 @@ export default function Login() {
 
     return (
         <>
-            {!isVerified ? 
+            {isVerified ? 
                 <App /> :
                 (
                     <div className="loginBackground">
