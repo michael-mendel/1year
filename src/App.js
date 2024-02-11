@@ -6,6 +6,7 @@ import { loadSlim } from "tsparticles-slim";
 import './App.css';
 import Memory from "./Memory";
 import Preloader from './Preloader';
+import { HiChevronDoubleDown, HiChevronDoubleUp } from "react-icons/hi";
 
 const App = () => {
 
@@ -301,7 +302,7 @@ const App = () => {
     },
     {
       image: 'images/grad5.png',
-      caption: "To Be Continued..."
+      caption: ""
     },
   ];
 
@@ -639,10 +640,6 @@ const App = () => {
       image: 'images2/boat5.jpeg',
       caption: "and pretty sunsets"
     },
-    // {
-    //   image: 'images2/boat2.png',
-    //   caption: ""
-    // },
     {
       image: 'images2/boat3.png',
       caption: ""
@@ -653,7 +650,7 @@ const App = () => {
     },
     {
       image: 'images2/boat6.jpeg',
-      caption: "pero mi-ami is broken rn"
+      caption: ""
     }
   ];
 
@@ -664,7 +661,7 @@ const App = () => {
     },
     {
       image: 'images2/club1.png',
-      caption: "To more going out"
+      caption: ""
     },
     {
       image: 'images2/club2.png',
@@ -692,7 +689,7 @@ const App = () => {
     },
     {
       image: 'images2/club6.JPG',
-      caption: "us drunkie"
+      caption: ""
     },
     {
       image: 'images2/club.GIF',
@@ -719,7 +716,7 @@ const App = () => {
     },
     {
       image: 'images2/paris5.jpeg',
-      caption: ""
+      caption: "oui oui"
     },
     {
       image: 'images2/paris6.jpeg',
@@ -774,14 +771,14 @@ const App = () => {
     },
     {
       image: 'images2/ita10.jpeg',
-      caption: "so pretty, lets go back"
+      caption: "una bellezza"
     }
   ];
 
   const y2_italy = [
     {
       image: 'images2/italy1.jpeg',
-      caption: ""
+      caption: "saturniaaaa"
     },
     {
       image: 'images2/italy2.jpeg',
@@ -789,7 +786,7 @@ const App = () => {
     },
     {
       image: 'images2/italy3.jpeg',
-      caption: ""
+      caption: "I got worms in my pants"
     },
     {
       image: 'images2/italy4.jpeg',
@@ -804,23 +801,7 @@ const App = () => {
       caption: ""
     },
     {
-      image: 'images2/italy7.jpeg',
-      caption: ""
-    },
-    {
       image: 'images2/italy8.jpeg',
-      caption: ""
-    },
-    {
-      image: 'images2/italy9.jpeg',
-      caption: ""
-    },
-    {
-      image: 'images2/italy10.jpeg',
-      caption: ""
-    },
-    {
-      image: 'images2/italy11.jpeg',
       caption: ""
     },
     {
@@ -833,20 +814,16 @@ const App = () => {
     },
     {
       image: 'images2/italy14.jpeg',
-      caption: ""
+      caption: "kari float"
     },
     {
       image: 'images2/italy15.jpeg',
-      caption: ""
+      caption: "mike sink"
     },
     {
       image: 'images2/italy16.jpeg',
       caption: ""
     },
-    {
-      image: 'images2/italy16.GIF',
-      caption: ""
-    }
   ];
 
   const y2_pisa = [
@@ -856,7 +833,7 @@ const App = () => {
     },
     {
       image: 'images2/pisa2.jpeg',
-      caption: "yummy fiorentina"
+      caption: "pregunti"
     },
     {
       image: 'images2/pisa3.jpeg',
@@ -868,7 +845,7 @@ const App = () => {
     },
     {
       image: 'images2/pisa5.jpeg',
-      caption: "I stronger though"
+      caption: ""
     },
     {
       image: 'images2/pisa6.jpeg',
@@ -880,7 +857,11 @@ const App = () => {
     },
     {
       image: 'images2/pisa8.jpeg',
-      caption: "Lucaaaa. I need this again"
+      caption: "Lucaaaa delizioso"
+    },
+    {
+      image: 'images2/italygif.GIF',
+      caption: ""
     },
     {
       image: 'images2/pisa9.jpeg',
@@ -888,7 +869,7 @@ const App = () => {
     },
     {
       image: 'images2/pisa10.jpeg',
-      caption: "I cant even put a caption on the next one cause itll cover your face"
+      caption: ""
     },
     {
       image: 'images2/pisa11.jpeg',
@@ -900,21 +881,21 @@ const App = () => {
     },
     {
       image: 'images2/pisa13.jpeg',
-      caption: "we ate the best gelato in the world"
+      caption: "il mejor gelato del mundi"
     }
   ];
 
   const y2_flor = [
+    {
+      image: 'images2/flor3.jpeg',
+      caption: "florenciaaa"
+    },
     {
       image: 'images2/flor1.jpeg',
       caption: ""
     },
     {
       image: 'images2/flor2.jpeg',
-      caption: ""
-    },
-    {
-      image: 'images2/flor3.jpeg',
       caption: ""
     },
     {
@@ -930,20 +911,16 @@ const App = () => {
       caption: ""
     },
     {
-      image: 'images2/flor7.jpeg',
-      caption: ""
-    },
-    {
       image: 'images2/flor8.jpeg',
       caption: ""
     },
     {
       image: 'images2/flor9.jpeg',
-      caption: ""
+      caption: "Our last day in italy"
     },
     {
       image: 'images2/flor10.jpeg',
-      caption: ""
+      caption: "arrivederci"
     }
   ];
 
@@ -1019,7 +996,7 @@ const App = () => {
   const y2_halo = [
     {
       image: 'images2/halo1.jpeg',
-      caption: ""
+      caption: "We were Repunzel and Pascal"
     },
     {
       image: 'images2/halo2.jpeg',
@@ -1027,7 +1004,7 @@ const App = () => {
     },
     {
       image: 'images2/halo3.jpeg',
-      caption: ""
+      caption: "I look like a cat"
     },
     {
       image: 'images2/halo4.jpeg',
@@ -1035,23 +1012,15 @@ const App = () => {
     },
     {
       image: 'images2/halo5.jpeg',
-      caption: ""
+      caption: "or a frog"
     },
     {
       image: 'images2/halo6.jpeg',
       caption: ""
     },
     {
-      image: 'images2/halo7.jpeg',
-      caption: ""
-    },
-    {
       image: 'images2/halo8.jpeg',
-      caption: ""
-    },
-    {
-      image: 'images2/halo9.jpeg',
-      caption: ""
+      caption: "mi princessa"
     },
     {
       image: 'images2/halo10.jpeg',
@@ -1075,7 +1044,7 @@ const App = () => {
     },
     particles: {
       number: {
-        value: 50,
+        value: 150,
         density: {
           enable: true,
           area: 800
@@ -1134,7 +1103,43 @@ const App = () => {
     }
   };
 
-  const options2 = {
+  const optionsPaco = {
+    particles: {
+      move: {
+        enable: true,
+        speed: { min: 1, max: 6 }
+      },
+      number: {
+        value: 20,
+        max: 30
+      },
+      opacity: {
+        value: 1
+      },
+      rotate: {
+        path: true
+      },
+      shape: {
+        options: {
+          image: {
+            gif: true,
+            height: 600,
+            src: "images2/pacomode.png",
+            width: 600
+          }
+        },
+        type: "image"
+      },
+      size: {
+        value: {
+          min: 60,
+          max: 120
+        }
+      }
+    }
+  };
+
+  const optionsLadyBug = {
     particles: {
       move: {
         enable: true,
@@ -1170,70 +1175,105 @@ const App = () => {
     }
   };
 
+  const optionsUs = {
+    particles: {
+      move: {
+        enable: true,
+        speed: { min: 1, max: 6 }
+      },
+      number: {
+        value: 40,
+        max: 50
+      },
+      opacity: {
+        value: 1
+      },
+      rotate: {
+        path: true
+      },
+      shape: {
+        options: {
+          image: {
+            gif: true,
+            height: 200,
+            src: "images2/usmode.png",
+            width: 200
+          }
+        },
+        type: "image"
+      },
+      size: {
+        value: {
+          min: 15,
+          max: 30
+        }
+      }
+    }
+  };
+
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
 
-  const imagesToPreload = [
-    ...aug.map(item => item.image),
-    ...cruise.map(item => item.image),
-    ...game.map(item => item.image),
-    ...gat.map(item => item.image),
-    ...grad.map(item => item.image),
-    ...hallo.map(item => item.image),
-    ...kbday.map(item => item.image),
-    ...mbday.map(item => item.image),
-    ...out.map(item => item.image),
-    ...panda.map(item => item.image),
-    ...rl.map(item => item.image),
-    ...seattle.map(item => item.image),
-    ...ween.map(item => item.image),
-    ...y2_boat.map(item => item.image),
-    ...y2_club.map(item => item.image),
-    ...y2_paris.map(item => item.image),
-    ...y2_ita.map(item => item.image),
-    ...y2_italy.map(item => item.image),
-    ...y2_pisa.map(item => item.image),
-    ...y2_flor.map(item => item.image),
-    ...y2_kgrad.map(item => item.image),
-    ...y2_shab.map(item => item.image),
-    ...y2_paco.map(item => item.image),
-    ...y2_halo.map(item => item.image),
-  ];  
+  const [selectedMode, setSelectedMode] = useState(false);
+  // Function to toggle isSelected state
+  const handleModeButtonClick = (mode) => {
+    setSelectedMode(mode);
+  };
 
-  const [isScrolledPastPoint, setIsScrolledPastPoint] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentPosition = window.scrollY;
-      setIsScrolledPastPoint(currentPosition > 1400);
-    };
-
-    // Initial check when component mounts
-    handleScroll();
-
-    // Attach event listener when component mounts
-    window.addEventListener('scroll', handleScroll);
-
-    // Remove event listener when component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
+  const [showParticlesModes, setshowParticlesModes] = useState(false);
+// Function to toggle isSelected state
+const handleshowParticlesModesButtonClick = () => {
+  setshowParticlesModes(!showParticlesModes);
+};
   return (
     <div className="App">
-      <Preloader images={imagesToPreload} />
       <div className="background">
-        
         <Particles 
-          options={options} 
-          init={particlesInit}/>
-
+        options={
+          (selectedMode == "paco") ? 
+            optionsPaco :
+            (selectedMode == "ladybug") ? 
+              optionsLadyBug :
+              (selectedMode == "us") ? 
+                optionsUs :
+                options
+        }
+        init={particlesInit}/>
       </div>
       <div className="body">
         <h1 className="title">Kari & Mike's Memories</h1>
         <h3 className="subtitle">Happy 2 Year Anniversary!</h3>
+
+
+        <div class="floating-buttons">
+        {showParticlesModes ? (
+            <>
+              <div>
+              <HiChevronDoubleUp color='white' size='30pt' onClick={handleshowParticlesModesButtonClick} />
+              </div>
+              <button 
+                className={(selectedMode === "paco") ? "floating-buttons-selected" : "floating-buttons-buttons"}
+                onClick={() => handleModeButtonClick((selectedMode === "paco") ? "none" : "paco")}>
+                Paco Mode
+              </button>
+              <button 
+                className={(selectedMode === "ladybug") ? "floating-buttons-selected" : "floating-buttons-buttons"}
+                onClick={() => handleModeButtonClick((selectedMode === "ladybug") ? "none" : "ladybug")}>
+                LadyBug Mode
+              </button>
+              <button 
+                className={(selectedMode === "us") ? "floating-buttons-selected" : "floating-buttons-buttons"}
+                onClick={() => handleModeButtonClick((selectedMode === "us") ? "none" : "us")}>
+                Us Mode
+              </button>
+            </>
+          ) : (
+            <HiChevronDoubleDown color='white' size='30pt' onClick={handleshowParticlesModesButtonClick} />
+          )}
+
+        </div>
+
         {/* computer screen */}
         {matches && (
           <div className="memories">
@@ -1256,16 +1296,16 @@ const App = () => {
             {/* year 2 */}
             <h3 className="chapter"> Chapter 2 </h3>
             <Memory location={'10vw'} data={y2_boat} />
-            <Memory location={'70vw'} data={y2_club} />
-            <Memory location={'30vw'} data={y2_shab} />
-            <Memory location={'80vw'} data={y2_paris} />
-            <Memory location={'50vw'} data={y2_ita} />
-            <Memory location={'10vw'} data={y2_italy} />
-            <Memory location={'80vw'} data={y2_pisa} />
-            <Memory location={'40vw'} data={y2_flor} />
-            <Memory location={'10vw'} data={y2_paco} />
-            <Memory location={'70vw'} data={y2_kgrad} />
-            <Memory location={'50vw'} data={y2_halo} />
+            <Memory location={'70vw'} data={y2_shab} />
+            <Memory location={'30vw'} data={y2_paris} />
+            <Memory location={'80vw'} data={y2_ita} />
+            <Memory location={'50vw'} data={y2_italy} />
+            <Memory location={'10vw'} data={y2_pisa} />
+            <Memory location={'80vw'} data={y2_flor} />
+            <Memory location={'40vw'} data={y2_paco} />
+            <Memory location={'10vw'} data={y2_kgrad} />
+            <Memory location={'70vw'} data={y2_halo} />
+            <Memory location={'50vw'} data={y2_club} />
           </div>
         )}
         {/* phone screen */}
@@ -1290,16 +1330,16 @@ const App = () => {
             {/* year 2 */}
             <h3 className="chapter"> Chapter 2 </h3>
             <Memory location={'5vw'} data={y2_boat} />
-            <Memory location={'60vw'} data={y2_club} />
-            <Memory location={'20vw'} data={y2_shab} />
-            <Memory location={'65vw'} data={y2_paris} />
-            <Memory location={'12vw'} data={y2_ita} />
-            <Memory location={'55vw'} data={y2_italy} />
-            <Memory location={'15vw'} data={y2_pisa} />
-            <Memory location={'50vw'} data={y2_flor} />
-            <Memory location={'52vw'} data={y2_paco} />
-            <Memory location={'65vw'} data={y2_kgrad} />
-            <Memory location={'20vw'} data={y2_halo} />
+            <Memory location={'60vw'} data={y2_shab} />
+            <Memory location={'20vw'} data={y2_paris} />
+            <Memory location={'65vw'} data={y2_ita} />
+            <Memory location={'12vw'} data={y2_italy} />
+            <Memory location={'55vw'} data={y2_pisa} />
+            <Memory location={'15vw'} data={y2_flor} />
+            <Memory location={'50vw'} data={y2_paco} />
+            <Memory location={'52vw'} data={y2_kgrad} />
+            <Memory location={'65vw'} data={y2_halo} />
+            <Memory location={'20vw'} data={y2_club} />
           </div>
         )}
       </div>
