@@ -248,7 +248,7 @@
 .floating-buttons {
   position: fixed; /* Position the container fixedly */
   top: 20px; /* Adjust top distance from the top of the viewport */
-  right: 20px; /* Adjust right distance from the right of the viewport */
+  right: 0px; /* Adjust right distance from the right of the viewport */
   z-index: 999; /* Set z-index to ensure it appears above other content */
   container: flex;
   flex-direction: column;

@@ -1342,7 +1342,7 @@ const handleshowParticlesModesButtonClick = () => {
             <Memory location={'55vw'} data={y2_pisa} />
             <Memory location={'15vw'} data={y2_flor} />
             <Memory location={'50vw'} data={y2_paco} />
-            <Memory location={'52vw'} data={y2_kgrad} />
+            <Memory location={'15vw'} data={y2_kgrad} />
             <Memory location={'65vw'} data={y2_halo} />
             <Memory location={'20vw'} data={y2_club} />
           </div>
