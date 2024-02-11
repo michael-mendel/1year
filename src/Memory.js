@@ -37,17 +37,22 @@ export default function Memory
       {!visited && (<button onClick={() => {
         setModalIsOpen(true)
         setVisited(true)
+        props.enterFunc()
       }} className='memory' style={{ left: props.location }}></button>)}
       {visited && (<button onClick={() => {
         setModalIsOpen(true)
         setVisited(true)
+        props.enterFunc()
       }} className='memoryVisited' style={{ left: props.location }}></button>)}
 
       {/* computer screen */}
       {matches && (
         <Modal
           isOpen={modalIsOpen}
-          onRequestClose={() => setModalIsOpen(false)}
+          onRequestClose={() => {
+            setModalIsOpen(false)
+            props.exitFunc()
+          }}
           className='modal'
           style={{
             overlay: {
@@ -58,7 +63,10 @@ export default function Memory
         >
           <div className='modalDiv'>
             <div className="modalRow">
-              <AiFillCloseCircle color='red' size='30pt' onClick={() => { setModalIsOpen(false) }} />
+              <AiFillCloseCircle color='red' size='30pt' onClick={() => {
+                 setModalIsOpen(false)
+                 props.exitFunc()
+                 }} />
             </div>
             <Carousel
               data={props.data}
@@ -101,7 +109,10 @@ export default function Memory
       {!matches && (
         <Modal
           isOpen={modalIsOpen}
-          onRequestClose={() => setModalIsOpen(false)}
+          onRequestClose={() => {
+            setModalIsOpen(false)
+            props.exitFunc()
+          }}
           className='modalSmall'
           style={{
             overlay: {
@@ -112,7 +123,10 @@ export default function Memory
         >
           <div className='modalDivSmall'>
             <div className="modalRowSmall">
-              <AiFillCloseCircle color="red" size={"25pt"} onClick={() => { setModalIsOpen(false) }} />
+              <AiFillCloseCircle color="red" size={"25pt"} onClick={() => { 
+                setModalIsOpen(false)
+                props.exitFunc()
+              }} />
             </div>
             <div className="carouselDivSmall">
               <Carousel

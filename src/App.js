@@ -1226,7 +1226,17 @@ const App = () => {
   const handleshowParticlesModesButtonClick = () => {
     setshowParticlesModes(!showParticlesModes);
   };
-  
+
+  const [isViewingMemory, setIsViewingMemory] = useState(false);
+  // Function to toggle isSelected state
+  const handleTappedMemory = () => {
+    setIsViewingMemory(true);
+  };
+  // Function to toggle isSelected state
+  const handleExitMemory = () => {
+    setIsViewingMemory(false);
+  };
+
   return (
     <div className="App">
       <div className="background">
@@ -1249,7 +1259,7 @@ const App = () => {
         <div class="floating-buttons">
         {showParticlesModes ? (
             <>
-              <div>
+              <div class="particle-mode-div">
               <HiChevronDoubleUp color='white' size='30pt' onClick={handleshowParticlesModesButtonClick} />
               </div>
               <button 
@@ -1274,7 +1284,9 @@ const App = () => {
               </button>
             </>
           ) : (
-            <HiChevronDoubleDown color='white' size='30pt' onClick={handleshowParticlesModesButtonClick} />
+            <div class="particle-mode-div">
+            <HiChevronDoubleDown color='white' opacity={isViewingMemory ? '0' : '100'} size='30pt' onClick={handleshowParticlesModesButtonClick} />
+            </div>
           )}
 
         </div>
@@ -1284,33 +1296,33 @@ const App = () => {
           <div className="memories">
             {/* year 1 */}
             <h3 className="chapter"> Chapter 1 </h3>
-            <Memory location={'10vw'} data={rl} />
-            <Memory location={'70vw'} data={out} />
-            <Memory location={'30vw'} data={hallo} />
-            <Memory location={'80vw'} data={gat} />
-            <Memory location={'50vw'} data={panda} />
-            <Memory location={'10vw'} data={aug} />
-            <Memory location={'80vw'} data={kbday} />
-            <Memory location={'40vw'} data={cruise} />
-            <Memory location={'10vw'} data={mbday} />
-            <Memory location={'75vw'} data={seattle} />
-            <Memory location={'50vw'} data={game} />
-            <Memory location={'20vw'} data={ween} />
-            <Memory location={'60vw'} data={grad} />
+            <Memory location={'10vw'} data={rl} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'70vw'} data={out} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'30vw'} data={hallo} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'80vw'} data={gat} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'50vw'} data={panda} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'10vw'} data={aug} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'80vw'} data={kbday} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'40vw'} data={cruise} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'10vw'} data={mbday} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'75vw'} data={seattle} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'50vw'} data={game} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'20vw'} data={ween} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'60vw'} data={grad} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
 
             {/* year 2 */}
             <h3 className="chapter"> Chapter 2 </h3>
-            <Memory location={'10vw'} data={y2_boat} />
-            <Memory location={'70vw'} data={y2_shab} />
-            <Memory location={'30vw'} data={y2_paris} />
-            <Memory location={'80vw'} data={y2_ita} />
-            <Memory location={'50vw'} data={y2_italy} />
-            <Memory location={'10vw'} data={y2_pisa} />
-            <Memory location={'80vw'} data={y2_flor} />
-            <Memory location={'40vw'} data={y2_paco} />
-            <Memory location={'10vw'} data={y2_kgrad} />
-            <Memory location={'70vw'} data={y2_halo} />
-            <Memory location={'50vw'} data={y2_club} />
+            <Memory location={'10vw'} data={y2_boat} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'70vw'} data={y2_shab} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'30vw'} data={y2_paris} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'80vw'} data={y2_ita} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'50vw'} data={y2_italy} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'10vw'} data={y2_pisa} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'80vw'} data={y2_flor} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'40vw'} data={y2_paco} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'10vw'} data={y2_kgrad} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'70vw'} data={y2_halo} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'50vw'} data={y2_club} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
           </div>
         )}
         {/* phone screen */}
@@ -1318,33 +1330,33 @@ const App = () => {
           <div className="memories">
             {/* year 1 */}
             <h3 className="chapter"> Chapter 1 </h3>
-            <Memory location={'5vw'} data={rl} />
-            <Memory location={'60vw'} data={out} />
-            <Memory location={'20vw'} data={hallo} />
-            <Memory location={'65vw'} data={gat} />
-            <Memory location={'12vw'} data={panda} />
-            <Memory location={'55vw'} data={aug} />
-            <Memory location={'15vw'} data={kbday} />
-            <Memory location={'50vw'} data={cruise} />
-            <Memory location={'10vw'} data={mbday} />
-            <Memory location={'52vw'} data={seattle} />
-            <Memory location={'15vw'} data={game} />
-            <Memory location={'65vw'} data={ween} />
-            <Memory location={'20vw'} data={grad} />
+            <Memory location={'5vw'} data={rl} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'60vw'} data={out} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'20vw'} data={hallo} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'65vw'} data={gat} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'12vw'} data={panda} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'55vw'} data={aug} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'15vw'} data={kbday} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'50vw'} data={cruise} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'10vw'} data={mbday} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'52vw'} data={seattle} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'15vw'} data={game} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'65vw'} data={ween} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'20vw'} data={grad} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
 
             {/* year 2 */}
             <h3 className="chapter"> Chapter 2 </h3>
-            <Memory location={'5vw'} data={y2_boat} />
-            <Memory location={'60vw'} data={y2_shab} />
-            <Memory location={'20vw'} data={y2_paris} />
-            <Memory location={'65vw'} data={y2_ita} />
-            <Memory location={'12vw'} data={y2_italy} />
-            <Memory location={'55vw'} data={y2_pisa} />
-            <Memory location={'15vw'} data={y2_flor} />
-            <Memory location={'50vw'} data={y2_paco} />
-            <Memory location={'15vw'} data={y2_kgrad} />
-            <Memory location={'65vw'} data={y2_halo} />
-            <Memory location={'20vw'} data={y2_club} />
+            <Memory location={'5vw'} data={y2_boat} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'60vw'} data={y2_shab} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'20vw'} data={y2_paris} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'65vw'} data={y2_ita} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'12vw'} data={y2_italy} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'55vw'} data={y2_pisa} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'15vw'} data={y2_flor} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'50vw'} data={y2_paco} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'15vw'} data={y2_kgrad} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'65vw'} data={y2_halo} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
+            <Memory location={'20vw'} data={y2_club} exitFunc={handleExitMemory} enterFunc={handleTappedMemory}/>
           </div>
         )}
       </div>
