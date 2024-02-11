@@ -1222,10 +1222,11 @@ const App = () => {
   };
 
   const [showParticlesModes, setshowParticlesModes] = useState(false);
-// Function to toggle isSelected state
-const handleshowParticlesModesButtonClick = () => {
-  setshowParticlesModes(!showParticlesModes);
-};
+  // Function to toggle isSelected state
+  const handleshowParticlesModesButtonClick = () => {
+    setshowParticlesModes(!showParticlesModes);
+  };
+  
   return (
     <div className="App">
       <div className="background">
@@ -1244,7 +1245,6 @@ const handleshowParticlesModesButtonClick = () => {
       <div className="body">
         <h1 className="title">Kari & Mike's Memories</h1>
         <h3 className="subtitle">Happy 2 Year Anniversary!</h3>
-
 
         <div class="floating-buttons">
         {showParticlesModes ? (
@@ -1267,11 +1267,11 @@ const handleshowParticlesModesButtonClick = () => {
                 onClick={() => handleModeButtonClick((selectedMode === "us") ? "none" : "us")}>
                 Us Mode
               </button>
-              {/* <button 
+              <button 
                 className={(selectedMode != "paco" && selectedMode != "ladybug" && selectedMode != "us") ? "floating-buttons-selected" : "floating-buttons-buttons"}
                 onClick={() => handleModeButtonClick("none")}>
                 Normal Mode
-              </button> */}
+              </button>
             </>
           ) : (
             <HiChevronDoubleDown color='white' size='30pt' onClick={handleshowParticlesModesButtonClick} />
