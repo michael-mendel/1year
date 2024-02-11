@@ -9,7 +9,7 @@ export default function Login() {
         // gets the current input value
         const answer = document.getElementById("password").value;
 
-        if (answer === "paco y jerry") {
+        if (answer === "Paco") {
             setIsVerified(true);
         } else {
             alert("Sorry, that's not it");
@@ -18,7 +18,7 @@ export default function Login() {
 
     return (
         <>
-            {!isVerified ? 
+            {isVerified ? 
                 <App /> :
                 (
                     <div className="loginBackground">

@@ -1044,7 +1044,7 @@ const App = () => {
     },
     particles: {
       number: {
-        value: 150,
+        value: 100,
         density: {
           enable: true,
           area: 800
@@ -1111,7 +1111,7 @@ const App = () => {
       },
       number: {
         value: 20,
-        max: 30
+        max: 20
       },
       opacity: {
         value: 1
@@ -1122,7 +1122,7 @@ const App = () => {
       shape: {
         options: {
           image: {
-            gif: true,
+            gif: false,
             height: 600,
             src: "images2/pacomode.png",
             width: 600
@@ -1147,7 +1147,7 @@ const App = () => {
       },
       number: {
         value: 20,
-        max: 30
+        max: 20
       },
       opacity: {
         value: 1
@@ -1158,9 +1158,9 @@ const App = () => {
       shape: {
         options: {
           image: {
-            gif: true,
+            gif: false,
             height: 200,
-            src: "images2/halo10.jpeg",
+            src: "images2/ladybugmode.png",
             width: 200
           }
         },
@@ -1182,8 +1182,8 @@ const App = () => {
         speed: { min: 1, max: 6 }
       },
       number: {
-        value: 40,
-        max: 50
+        value: 20,
+        max: 20
       },
       opacity: {
         value: 1
@@ -1194,7 +1194,7 @@ const App = () => {
       shape: {
         options: {
           image: {
-            gif: true,
+            gif: false,
             height: 200,
             src: "images2/usmode.png",
             width: 200
@@ -1204,8 +1204,8 @@ const App = () => {
       },
       size: {
         value: {
-          min: 15,
-          max: 30
+          min: 20,
+          max: 40
         }
       }
     }
@@ -1267,6 +1267,11 @@ const handleshowParticlesModesButtonClick = () => {
                 onClick={() => handleModeButtonClick((selectedMode === "us") ? "none" : "us")}>
                 Us Mode
               </button>
+              {/* <button 
+                className={(selectedMode != "paco" && selectedMode != "ladybug" && selectedMode != "us") ? "floating-buttons-selected" : "floating-buttons-buttons"}
+                onClick={() => handleModeButtonClick("none")}>
+                Normal Mode
+              </button> */}
             </>
           ) : (
             <HiChevronDoubleDown color='white' size='30pt' onClick={handleshowParticlesModesButtonClick} />
