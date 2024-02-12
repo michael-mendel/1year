@@ -20,7 +20,7 @@ export default function Memory
 
   const captionStyle = {
     fontSize: '2em',
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   }
   const slideNumberStyle = {
     fontSize: '20px',

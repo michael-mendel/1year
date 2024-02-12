@@ -9,7 +9,7 @@ export default function Login() {
         // gets the current input value
         const answer = document.getElementById("password").value;
 
-        if (answer === "Paco") {
+        if (answer === "Paco12345.!?[]") {
             setIsVerified(true);
         } else {
             alert("Sorry, that's not it");
