@@ -12,7 +12,7 @@ export default function Login() {
         if (answer === "Paco12345.!?[]") {
             setIsVerified(true);
         } else {
-            alert("Sorry, that's not it");
+            alert("Wrong! Womp Womp!");
         }
     };
 
